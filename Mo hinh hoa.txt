@@ -1,0 +1,122 @@
+Exercise 1
+1)
+*Answer:*
+
+
+1. $\lambda_1, \lambda_2\in\mathbb R, \lambda_1\ne \lambda_2$:
+
+    $$
+      \textbf{x}(t) = c_1e^{\lambda_1t}\eta^{(1)}+c_2e^{\lambda_2t}\eta^{(2)}
+    $$
+   where\
+   $c_1, c_2$: constants\
+   $\eta^{(1)}, \eta^{(2)}$: eigenvectors of $A$ $\newline$
+   
+2. $\lambda_1, \lambda_2\in\mathbb R, \lambda_1=\lambda_2$:
+
+    $$
+      \textbf{x}(t) = c_1e^{\lambda_1t}\eta+c_2(te^{\lambda_1t}\eta+e^{\lambda_1t}\rho)
+    $$
+   where\
+   $c_1, c_2$: constants\
+   $\eta$: an eigenvector of $A$\
+   $\rho$: an unknown vector we will need to determine $\newline$
+   
+3. $\lambda_1, \lambda_2\in\mathbb C, \lambda_1= a+ib, \lambda_2=a-ib$:
+
+    $$
+      \textbf{x}(t) = e^{at}cos(bt)\omega+e^{at}sin(bt)\phi
+    $$
+    where\
+    $\omega, \phi$: unknown vectors we will need to determine
+
+
+Exercise 2
+1)
+*Answer:*
+
+
+0.   Sample example: $A = \begin{pmatrix} 1 & -1 \\ 2 & 1 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix}1 \\ 1\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = \\
+$$
+
+1.   Example 1: $A = \begin{pmatrix} -2 & 1 \\ 4 & 1 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix} 2 \\ 3\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{2t}\begin{pmatrix} 1 \\ 4\end{pmatrix} + e^{-3t}\begin{pmatrix} 1 \\ -1\end{pmatrix} \\
+$$
+
+2.   Example 2: $A = \begin{pmatrix} 2 & 1 \\ 2 & 3 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix} 4 \\ 5\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{t}\begin{pmatrix} 1 \\ -1\end{pmatrix} + 3e^{4t}\begin{pmatrix} 1 \\ 2\end{pmatrix} \\
+$$
+
+3.   Example 3: $A = \begin{pmatrix} 3 & -2 \\ 2 & -1 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix} 1 \\ 2\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{t}\begin{pmatrix} 1 \\ 2\end{pmatrix} - 2te^{t}\begin{pmatrix} 1 \\ 1\end{pmatrix} \\
+$$
+
+4.   Example 4: $A = \begin{pmatrix} 1 & -1 \\ 1 & 3 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix} 1 \\ 3\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{2t}\begin{pmatrix} 1 \\ 3\end{pmatrix} - 4te^{2t}\begin{pmatrix} 1 \\ -1\end{pmatrix} \\
+$$
+
+5.   Example 5: $A = \begin{pmatrix} 3 & -1 \\ 5 & -1 \end{pmatrix}$ and $\textbf{x}_0 = \begin{pmatrix} 2 \\ 1\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{t}cos(t)\begin{pmatrix} 2 \\ 1\end{pmatrix} + e^{t}sin(t)\begin{pmatrix} 3 \\ 8\end{pmatrix}
+$$
+
+2)
+*Answer:*
+
+Solution is
+$$
+  \textbf{x}(t) = \textbf{x}_c(t)+e^{kt}\sum_{i=0}^n\ t^i\gamma^{(i)},
+$$
+
+where
+$\\\textbf{x}_c(t) = \begin{cases}
+  c_1e^{\lambda_1t}\eta^{(1)}+c_2e^{\lambda_2t}\eta^{(2)}\hspace{35pt}(if\ \lambda_1, \lambda_2\in\mathbb R, \lambda_1\ne \lambda_2)\\
+  c_1e^{\lambda_1t}\eta+c_2(te^{\lambda_1t}\eta+e^{\lambda_1t}\rho)\hspace{15pt}(if\ \lambda_1, \lambda_2\in\mathbb R, \lambda_1=\lambda_2)\\
+  e^{at}cos(bt)\omega+e^{at}sin(bt)\phi\hspace{20pt}(if\ \lambda_1, \lambda_2\in\mathbb C, \lambda_1= a+ib, \lambda_2=a-ib)
+\end{cases}$
+
+$c_1, c_2$: constants\
+$\lambda_1, \lambda_2$: eigenvalues of $A$\
+$\eta^{(1)}, \eta^{(2)}$: eigenvectors of $A$\
+$\eta$: an eigenvector of $A$\
+$\rho$: an unknown vector we will need to determine\
+$\omega, \phi$: unknown vectors we will need to determine\
+$e^{kt}$: dependent on $\textbf{f}(t)$\
+$\gamma^{(i)}$: an 2-dimensional real value vector
+
+3)
+*Answer:*
+
+
+
+0.   Sample example: $A = \begin{pmatrix} 1 & -1 \\ 2 & 1 \end{pmatrix}$, $\textbf{f}(t)=\begin{pmatrix} t, t^2 \end{pmatrix}$, and $\textbf{x}_0 = \begin{pmatrix}1 \\ 1\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = \\ 
+$$
+
+1.   Example 1: $A = \begin{pmatrix} -1 & 1 \\ -8 & 5 \end{pmatrix}$, $\textbf{f}(t)=\begin{pmatrix} 4t+1, 3t^2-8 \end{pmatrix}$, and $\textbf{x}_0 = \begin{pmatrix} 1 \\ 2\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = 12e^{t}\begin{pmatrix} 1 \\ 2\end{pmatrix} - 2e^{3t}\begin{pmatrix} 1 \\ 4\end{pmatrix} + t^2\begin{pmatrix} 1 \\ 1\end{pmatrix} + t\begin{pmatrix} -4 \\ -6\end{pmatrix} + \begin{pmatrix} -9 \\ -14\end{pmatrix}
+$$
+$\\ $
+2.   Example 2: $A = \begin{pmatrix} 5 & -1 \\ 1 & 3 \end{pmatrix}$, $\textbf{f}(t)=\begin{pmatrix} 4t^2+7t-5, 20t^2+3t-14 \end{pmatrix}$, and $\textbf{x}_0 = \begin{pmatrix} 3 \\ 7\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = 2e^{4t}\begin{pmatrix} 1 \\ 2\end{pmatrix} - 2te^{4t}\begin{pmatrix} 1 \\ 1\end{pmatrix} + t^2\begin{pmatrix} -2 \\ -6\end{pmatrix} + t\begin{pmatrix} -3 \\ -4\end{pmatrix} + \begin{pmatrix} 1 \\ 3\end{pmatrix}
+$$
+
+
+1.   Example 1: $A = \begin{pmatrix} 1 & 1 \\ -2 & 4 \end{pmatrix}$, $\textbf{f}(t)=\begin{pmatrix} 7t^2-t+4, -2t^2-4t+13 \end{pmatrix}$, and $\textbf{x}_0 = \begin{pmatrix} 3 \\ 5 \end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = 3e^{2t}\begin{pmatrix} 1 \\ 1 \end{pmatrix} + 4e^{3t}\begin{pmatrix} 1 \\ 2 \end{pmatrix} + t^2\begin{pmatrix} -5 \\ -2 \end{pmatrix} + t\begin{pmatrix} -6 \\ -3 \end{pmatrix} + \begin{pmatrix} -4 \\ -6 \end{pmatrix}
+$$
+$\\ $
+2.   Example 2: $A = \begin{pmatrix} 5 & -1 \\ 1 & 3 \end{pmatrix}$, $\textbf{f}(t)=\begin{pmatrix} 3e^{2t}, 5e^{2t} \end{pmatrix}$, and $\textbf{x}_0 = \begin{pmatrix} 3 \\ 1\end{pmatrix}$. Solution is
+$$
+  \textbf{x}(t) = e^{4t}\begin{pmatrix} 5 \\ 4\end{pmatrix} + te^{4t}\begin{pmatrix} 1 \\ 1\end{pmatrix} + e^{2t}\begin{pmatrix} -2 \\ -3\end{pmatrix}
+$$
